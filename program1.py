@@ -1,4 +1,3 @@
-#!/home/spl/miniconda3/envs/tank/bin/python
 import time
 import sys
 import pickle
