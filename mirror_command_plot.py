@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
@@ -89,25 +88,3 @@ class PlotView(QWidget):
 
     def _get_patches(self):
         return self.patches
-
-
-
-
-
-
-# class MainWindow(QMainWindow):
-#     def __init__(self):
-#         super().__init__()
-#         self.setWindowTitle("Mirror Command")
-
-#         self.plot_view = PlotView()
-#         self.setCentralWidget(self.plot_view)
-
-# def main():
-#     app = QApplication(sys.argv)
-#     window = MainWindow()
-#     window.show()
-#     sys.exit(app.exec_())
-
-# if __name__ == "__main__":
-#     main()
