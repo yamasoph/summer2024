@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 from PyQt5.QtWidgets import QWidget, QApplication, QVBoxLayout, QPushButton, QLabel, QHBoxLayout, QSlider, QScrollArea, QLineEdit, QSpinBox, QMessageBox, QMainWindow, QMdiArea, QMdiSubWindow
 from PyQt5.QtCore import Qt
 from mirror_command_plot import PlotView
