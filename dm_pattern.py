@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 import sys
 import time
 import struct
@@ -15,7 +13,7 @@ else:
     print("Use x86_64 libraries.")
     from Lib64.asdk import DM
 
-file_path = r"C:\Users\SPL\Desktop\alpao_usb\Python3\ZernikeMags.csv"
+file_path = r""
 zernike_data = pd.read_csv(file_path, header=None)
 
 def convert_to_percentages(zernike_data):
@@ -62,7 +60,7 @@ def main(args):
                 zernike_values = 2 * zernike_values - 1  #scales to [-1,1]
             
             dm.Send(zernike_values)
-            time.sleep(5) #can go to around 0.005 seconds
+            time.sleep(5) #time in between patterns, can go to around 0.005 seconds
             counter += 1
             if counter > counter_max:
                 break
