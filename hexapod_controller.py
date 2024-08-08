@@ -6,6 +6,7 @@ pidevice = GCSDevice('C-887')
 pidevice.InterfaceSetupDlg()
 print(pidevice.qIDN())
 print(pidevice.qPOS())
+print("[yellow]Use the up & down arrows to change the hexapod, hit the right and left arrows to change the increment, hit spacebar to reset and choose a new axis.[/yellow]")
 
 def hexfunc():
     axes = ["X", "Y", "Z", "U", "V", "W"]
