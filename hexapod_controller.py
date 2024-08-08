@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 from pipython import GCSDevice
 import keyboard
 
@@ -7,7 +5,6 @@ pidevice = GCSDevice('C-887')
 pidevice.InterfaceSetupDlg()
 print(pidevice.qIDN())
 print(pidevice.qPOS())
-
 
 def hexfunc():
     axes = ["X", "Y", "Z", "U", "V", "W"]
@@ -44,9 +41,4 @@ def hexfunc():
         except ValueError:
             print("Please enter a valid number.")
 
-
 hexfunc()
-
-#connect xyzuvw axis to keyboard inputs 123456 and then have a value 
-#that can be entered as user input like 0.01 degree/mm and then keys up&down 
-#correspond to adding/subtracting
